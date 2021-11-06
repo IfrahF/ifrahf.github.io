@@ -64,7 +64,7 @@ fig3 = instacart %>%
   group_by(order_dow, order_hour_of_day) %>%
   summarise(total_orders = n()) %>%
   mutate(text_label = str_c("Hour of day: ", order_hour_of_day, ":00 hrs", "\nItems Ordered: ", total_orders)) %>%
-  plot_ly(x = ~order_hour_of_day, y = ~total_orders, group = ~order_dow, type = "scatter", color = ~order_dow, text = ~text_label, mode = "lines+markers")
+  plot_ly(x = ~order_hour_of_day, y = ~total_orders, group = ~order_dow, type = "scatter", color = ~order_dow, text = ~text_label, mode = "lines+markers", colors = "viridis")
 
 
 fig3 %>%
