@@ -1,0 +1,9 @@
+---
+title: "Personal Website"
+author: "Ifrah Fayyaz"
+date: "11/5/2021"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
