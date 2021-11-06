@@ -59,16 +59,17 @@ figure2 %>%
 ### Chart C
 
 ```{r}
-fig2 = instacart %>%
-  count(department, sort = TRUE) %>%
-  mutate(department = reorder(department,n))
+fig3 = instacart %>%
+  mutate(order_dow = recode(order_dow, "0" = "Sunday", "1" = "Monday", "2" = "Tuesday", "3" = "Wednesday", "4" = "Thursday", "5" = "Friday", "6" = "Saturday")) %>%
+  group_by(order_dow, order_hour_of_day) %>%
+  summarise(total_orders = n()) %>%
+  mutate(text_label = str_c("Hour of day: ", order_hour_of_day, ":00 hrs", "\nItems Ordered: ", total_orders)) %>%
+  plot_ly(x = ~order_hour_of_day, y = ~total_orders, group = ~order_dow, type = "scatter", color = ~order_dow, text = ~text_label, mode = "lines+markers")
 
-figure2 = fig2 %>% 
-  plot_ly(x = ~department, y = ~n, color = ~department, type = "bar", colors = "viridis")
 
-figure2 %>%
-  layout(title = 'Department by Count of Items Ordered',
-         xaxis = list(title = 'Department Name', font = list(size = 30), standoff = 35),
-         yaxis = list(title = 'Count', font = list(size = 30), standoff = 35))
+fig3 %>%
+  layout(title = 'Total sales by Hour of Day',
+         xaxis = list(title = 'Hour of Day', font = list(size = 30), standoff = 35, ticks = 1),
+         yaxis = list(title = 'Items Ordered', font = list(size = 30), standoff = 35))
 ```
 
