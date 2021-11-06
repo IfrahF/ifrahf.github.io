@@ -1,5 +1,5 @@
 ---
-name: "Yay internet!"
+name: "Making website"
 output_dir: "."
 navbar:
   title: Home
