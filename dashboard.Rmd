@@ -1,0 +1,74 @@
+---
+title: "NOAA Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source_code: embed
+    theme: sandstone
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plotly)
+library(flexdashboard)
+library(p8105.datasets)
+data("instacart")
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+fig1 = instacart %>%
+  count(aisle, sort = TRUE) %>%
+  filter(n > 12000) %>%
+  mutate(aisle = reorder(aisle,n))
+
+figure1 = fig1 %>% 
+  plot_ly(x = ~n, y = ~aisle, color = ~aisle, type = "bar", colors = "viridis")
+
+figure1 %>%
+  layout(title = 'Aisles by Count of Items Ordered',
+         xaxis = list(title = 'Count', font = list(size = 30), standoff = 35),
+         yaxis = list(title = 'Aisle Name', font = list(size = 30), standoff = 35))
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+fig2 = instacart %>%
+  count(department, sort = TRUE) %>%
+  mutate(department = reorder(department,n))
+
+figure2 = fig2 %>% 
+  plot_ly(x = ~department, y = ~n, color = ~department, type = "bar", colors = "viridis")
+
+figure2 %>%
+  layout(title = 'Department by Count of Items Ordered',
+         xaxis = list(title = 'Department Name', font = list(size = 30), standoff = 35),
+         yaxis = list(title = 'Count', font = list(size = 30), standoff = 35))
+```
+
+### Chart C
+
+```{r}
+fig2 = instacart %>%
+  count(department, sort = TRUE) %>%
+  mutate(department = reorder(department,n))
+
+figure2 = fig2 %>% 
+  plot_ly(x = ~department, y = ~n, color = ~department, type = "bar", colors = "viridis")
+
+figure2 %>%
+  layout(title = 'Department by Count of Items Ordered',
+         xaxis = list(title = 'Department Name', font = list(size = 30), standoff = 35),
+         yaxis = list(title = 'Count', font = list(size = 30), standoff = 35))
+```
+
