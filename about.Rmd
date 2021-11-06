@@ -9,5 +9,7 @@ right:
     href: https://github.com/IfrahF/
 output: 
   html_document:
-    theme: cerulean
+    theme: sandstone
+    toc: true
+    toc_float: true
 ---
