@@ -75,7 +75,7 @@ output:
 ## **Additional Information**
 **Languages:** English (native), Urdu (native)
 
-**Software skills:** SAS, R, STATA, SPSS, Github, Power BI, SQL, MATLAB, EpiData, CommCare, Microsoft Access
+**Software skills:** SAS, R, STATA, SPSS, GitHub, Power BI, SQL, MATLAB, EpiData, CommCare, Microsoft Access
 
 **Other interests:** Sufi Literature, Traveling, Hiking
 
