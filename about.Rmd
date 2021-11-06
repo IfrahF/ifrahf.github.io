@@ -13,3 +13,91 @@ output:
     toc: true
     toc_float: true
 ---
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+data("instacart")
+library(plotly)
+```
+
+# Instacart
+
+## Figure 1:
+
+```{r, warning=FALSE, message=FALSE}
+fig1 = 
+  instacart %>%
+    count(aisle, sort = TRUE) %>%
+    filter(n > 5000) %>%
+    mutate(aisle = reorder(aisle,n)) %>%
+    plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar", colors = "viridis")
+
+fig1 = fig1 %>% 
+  layout(title = 'Aisles by count of items ordered',
+         xaxis = list(title = 'Aisle',
+         yaxis = list(title = 'Count of Items Ordered')))
+
+fig1
+```
+
+## Figure 2:
+
+```{r, warning=FALSE, message=FALSE}
+instacart %>%
+  count(aisle, sort = TRUE) %>%
+  filter(n > 5000) %>%
+  arrange(order_dow) %>%
+  mutate(order_dow = recode(order_dow, "0" = "Sunday", "1" = "Monday", "2" = "Tuesday", "3" = "Wednesday", "4" = "Thursday", "5" = "Friday", "6" = "Saturday")) %>%
+  mutate(text_label = str_c("Day of the Week: $", order_dow, "\nHour of Day: ", order_hour_of_day)) %>%
+  plot_ly(x = ~order_dow, y = ~order_hour_of_day, type = "scatter", mode = "markers", color = ~order_dow, text = ~text_label, alpha = 0.5)
+
+```
+
+
+
+```{r, warning=FALSE, message=FALSE}
+
+```
+
+
+
+```{r, warning=FALSE, message=FALSE}
+
+```
+
+
+
+```{r, warning=FALSE, message=FALSE}
+
+```
+
+
+
+
+```{r, warning=FALSE, message=FALSE}
+
+```
+
+
+
+```{r, warning=FALSE, message=FALSE}
+
+```
+
+
+
+```{r, warning=FALSE, message=FALSE}
+
+```
+
+
+
+```{r, warning=FALSE, message=FALSE}
+
+```
+
+
+
+
+
