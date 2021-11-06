@@ -33,8 +33,8 @@ figure1 = fig1 %>%
 
 figure1 %>%
   layout(title = 'Aisles by Count of Items Ordered',
-         xaxis = list(title = 'Count', font = list(size = 30), standoff = 35),
-         yaxis = list(title = 'Aisle Name', font = list(size = 30), standoff = 35))
+         xaxis = list(title = 'Count', font = list(size = 30)),
+         yaxis = list(title = 'Aisle Name', font = list(size = 30)))
 ```
 
 Column {data-width=350}
@@ -52,8 +52,8 @@ figure2 = fig2 %>%
 
 figure2 %>%
   layout(title = 'Department by Count of Items Ordered',
-         xaxis = list(title = 'Department Name', font = list(size = 30), standoff = 35),
-         yaxis = list(title = 'Count', font = list(size = 30), standoff = 35))
+         xaxis = list(title = 'Department Name', font = list(size = 30)),
+         yaxis = list(title = 'Count', font = list(size = 30)))
 ```
 
 ### Chart C
@@ -69,7 +69,7 @@ fig3 = instacart %>%
 
 fig3 %>%
   layout(title = 'Total sales by Hour of Day',
-         xaxis = list(title = 'Hour of Day', font = list(size = 30), standoff = 35, ticks = 1),
-         yaxis = list(title = 'Items Ordered', font = list(size = 30), standoff = 35))
+         xaxis = list(title = 'Hour of Day', font = list(size = 30)),
+         yaxis = list(title = 'Items Ordered', font = list(size = 30)))
 ```
 
