@@ -48,10 +48,10 @@ fig2 = instacart %>%
   summarize(times_ordered = n()) %>%
   arrange(desc(times_ordered)) %>%
   top_n(10)  %>%
-  plot_ly(labels = ~product_name, values = ~times_ordered, type = "pie", hole = 0.6, textinfo = "label", colors = "viridis") 
+  plot_ly(labels = ~product_name, values = ~times_ordered, type = "pie", hole = 0.6, colors = "viridis") 
 
 fig2 %>%    
-  layout(title = "Top 10 Items Added to the Cart", showlegend = F)
+  layout(title = "Top 10 Items Added to the Cart")
 ```
 
 ### Chart C
