@@ -6,6 +6,8 @@ navbar:
   right:
     - text: "Instacart Dashboard"
       href: dashboard.html
+    - text: "About"
+      href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:<ifrahfayyaz1@gmail.com>
     - icon: fa-github fa-lg
