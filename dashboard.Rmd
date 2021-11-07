@@ -44,16 +44,14 @@ Column {data-width=350}
 
 ```{r}
 fig2 = instacart %>%
-  count(department, sort = TRUE) %>%
-  mutate(department = reorder(department,n))
+  group_by(product_name) %>%
+  summarize(times_ordered = n()) %>%
+  arrange(desc(times_ordered)) %>%
+  top_n(10)  %>%
+  plot_ly(labels = ~product_name, values = ~times_ordered, type = "pie", hole = 0.6, textinfo = "label", colors = "viridis") 
 
-figure2 = fig2 %>% 
-  plot_ly(x = ~department, y = ~n, color = ~department, type = "bar", colors = "viridis")
-
-figure2 %>%
-  layout(title = 'Department by Count of Items Ordered',
-         xaxis = list(title = 'Department Name', font = list(size = 30)),
-         yaxis = list(title = 'Count', font = list(size = 30)))
+fig2 %>%    
+  layout(title = "Top 10 Items Added to the Cart", showlegend = F)
 ```
 
 ### Chart C
