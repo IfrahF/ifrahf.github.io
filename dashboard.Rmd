@@ -17,7 +17,7 @@ data("instacart")
 ```
 
 
-Column {data-width=650}
+Column {data-width=550}
 -----------------------------------------------------------------------
 
 ### Chart A
@@ -37,7 +37,7 @@ figure1 %>%
          yaxis = list(title = 'Aisle Name', font = list(size = 30)))
 ```
 
-Column {data-width=350}
+Column {data-width=450}
 -----------------------------------------------------------------------
 
 ### Chart B
