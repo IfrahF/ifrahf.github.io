@@ -1,81 +1,40 @@
 ---
-title: <center> **Ifrah Fayyaz**
+title: <center> **Personal Website**
 output: 
   html_document:
     theme: sandstone
 ---
 
-
 <center> 
-##### New York, NY 10025, USA | (929) 395-8643 | [ifrahfayyaz1@gmail.com](mailto:<ifrahfayyaz1@gmail.com>)
-</center> 
+## You have reached Ifrah's Personal GitHub Website!
+
+
 
 <br>
 
-## **Education**
-#### **Columbia University Mailman School of Public Health, New York, NY**
-**Master of Public Health (MPH), Epidemiology (2020-2022)**
+![](https://www.meccanismocomplesso.org/wp-content/uploads/2014/09/github-logo.jpg)
 
-- Certificate in Applied Biostatistics & Public Health Data Science 
-- Relevant Courses: Applied Regression I & II, Data Science I, Relational Databases and SQL Programming, Health Economics, Principals of Epidemiology II & III, Analysis of Categorical Data & Applications of Epidemiological Research Methods
-- Teaching Assistant for Research Methods and Applications (Quantitative Module) & Analysis of Categorical Data     
-- GPA: 4.07/4.00
-
+</center>
 <br>
 
-#### **Lahore University of Management Sciences, Pakistan**
-**Bachelor of Science (BS), Biology (2015-2019)**
+### Here are a few repositories that I work on:
+#### **Classwork:**
+- [First Example Repository](https://github.com/IfrahF/example_repo)
+- [Data Wrangling 1](https://github.com/IfrahF/data_wrangling1)
+- [Visualization and EDA](https://github.com/IfrahF/viz_and_eda)
+- [Case Study](https://github.com/IfrahF/case_study)
+- [Data Wrangling 2](https://github.com/IfrahF/data_wrangling_2)
+- [Iteration](https://github.com/IfrahF/iteration)
 
-- Relevant Courses: Advanced Biostatistics, Probability, Calculus I & II, Computational Biology, Linear Algebra and Differential Equations, Immunology, Cell Biology, Virology and Microbiology, Developmental Biology, Neuroscience & Genetics 
-<br>
-<br>
+
+#### **Homeworks:**
+- [Homework 1](https://github.com/IfrahF/p8105_hw1_if2282)
+- [Homework 2](https://github.com/IfrahF/p8105_hw1_if2282)
+- [Homework 3](https://github.com/IfrahF/p8105_hw1_if2282)
 
 
-## **Professional Experience**
-#### **International Rescue Committee (IRC), New York, NY**
-**Data Science Consultant, Airbel Impact Lab (June 2021 – Present)**
+#### **Midterm Project:** 
+- [Midterm Project](https://github.com/IfrahF/p8105_mtp_if2282): Beware! If you are not a collaborator, you probably will not be able to access this repository!
 
--	Conducted sensitivity analysis modeling the impact of different magnitudes of age rounding on height-for-age z-scores (HAZ) and weight-for-age z-scores (WAZ) to enhance assessment of malnutrition risk 
--	Performed analysis in STATA to address the possible implications for under or overprescribing ready-to-use therapeutic food (RUTF) for different admission criteria
--	Prepared feeding program country-specific reports and dashboards using Power BI for nutrition field teams responsible for over 50,000 malnourished children in Mali, Chad, Somalia, and Kenya
 
-<br>
-
-#### **The Aga Khan University (AKU), Pakistan**
-**Research Assistant, Community Health Sciences	(2019 – 2020)**
-
--	Conducted statistical analysis to determine the significant risk factors associated with neonatal deaths in first-born infants, using data from over twelve thousand mothers from the Pakistan Demographic Health Survey 2017-2018
--	Performed binary and multivariable logistic regression on data to identify six major contributing factors, including socioeconomic status, child weight at birth, and mother’s education level, in deaths of first-born infants aged 13 months or less
-<br>
--	Actively involved in a project to evaluate health impact on women and children, of rural Sindh, of using traditional cookstoves vs. improved smokeless cookstoves through Controlled Cooking Tests (CCT) 
--	Concluded through statistical analysis that smokeless cookstoves were emitting 50% less particulate matter and 35% less carbon monoxide while being 8% more time-efficient and consuming 10% less fuel than traditional cookstoves
-<br>
--	Performed analysis using the health risk assessment AirQ+ software tool (developed by WHO Europe) to evaluate the effects of higher fine particulate matter (PM2.5) in the atmosphere
--	Calculated the population attributable fraction for mortality through acute lower respiratory infections, ischemic heart disease, chronic obstructive pulmonary disease, lung cancer and stroke; published findings in national journal
-
-<br>
-
-#### **Sindh Institute of Urology and Transplantation (SIUT), Pakistan**
-**Molecular Biologist Intern (Summer 2017)**
-
--	Utilized pathological techniques on over 200 body tissue samples to detect traces of diseases such as HIV, Hepatitis A, B, C and D, Mycobacterium Tuberculosis (MTB) and Epstein-Barr Virus (EBV)
--	Conducted extensive statistical studies to determine the prevalence of disease occurrence in Karachi and compiled a report documenting preventive measures for each disease to contain its spread
-
-<br>
-
-## **Research Experience**
-#### **Lahore University of Management Sciences, Pakistan**
-**Establishment of Chick Chorioallantoic Membrane (CAM) as an *In Vivo* Model for Tumor Growth (2018 - 2019)**
-
-- Prepared over 120 chick embryos for human cancer inoculation and tumor growth; performed dissections for tumor isolation to evaluate sizes of extracted macroscopic tumors and administered seven anti-tumor drugs to assess their efficacy
-- Established the Chick CAM process as an alternative to the Xenograft model; cost-effectiveness and time efficiency of this model demonstrated its usefulness as an intermediary step to pre-clinical drug testing
-
-<br>
-
-## **Additional Information**
-**Languages:** English (native), Urdu (native)
-
-**Software skills:** SAS, R, STATA, SPSS, GitHub, Power BI, SQL, MATLAB, EpiData, CommCare, Microsoft Access
-
-**Other interests:** Sufi Literature, Traveling, Hiking
 
